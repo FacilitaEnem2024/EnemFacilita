@@ -1,0 +1,443 @@
+:root {
+    --cor-primaria: #004aad;
+    --cor-secundaria: #337ab7;
+    --cor-fundo: #000000;
+    --cor-texto: #666;
+  }
+.material-button {
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .material-button:hover{
+    background-color: #022e4b;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: sans-serif;
+  }
+  
+  .botao {
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .botao:hover {
+    background-color: #022e4b;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Distribute cards evenly */
+  }
+  
+  .card {
+     /* Your blue color */
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    min-width: 250px;
+    
+  }
+  .card-header {
+    background-color: #004aad;
+    border-top: orange solid 3px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: white;
+    border-radius: 5px ;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: #004aad;
+    border-radius: 8px ;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .card-text {
+    color: white;
+  }
+  .texto {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px 25px;
+    position: relative;
+    z-index: 2;
+  }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.logo-container:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.logo {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 3;
+    justify-content: center;
+    
+}
+
+.menu a {
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #004aad;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.menu a:hover {
+    background-color: #022e4b;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40px;
+    width: 50px;
+    z-index: 4;
+}
+
+.hamburger div {
+    background-color: #fff;
+    height: 4px;
+    width: 80%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.overlay.active {
+    display: block;
+}
+.benef{
+    color: white;
+}
+
+.content.blur {
+    filter: blur(5px);
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        top: auto;
+        right: auto;
+        border-radius: 0;
+    }
+    .hamburger {
+        display: none;
+    }
+    .cards-container {
+        flex-direction: column;
+      }
+      .card {
+        width: 100%;
+        margin: 20px 0;
+      }
+      .card-title {
+        font-size: 18px;
+      }
+      .card-text {
+        font-size: 16px;
+      }
+      .btn {
+        padding: 10px 15px;
+        font-size: 16px;
+      }
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.main-video {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.recommended-videos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 600px; /* Altura máxima para a área de rolagem */
+    overflow-y: scroll; /* Adiciona rolagem vertical */
+}
+
+/* Estilização opcional para a barra de rolagem */
+.recommended-videos::-webkit-scrollbar {
+    width: 8px;
+}
+
+.recommended-videos::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.recommended-videos::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.recommended-videos::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.content {
+    padding: 80px;
+}
+
+.subject {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: #004aad;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid; /* Adiciona uma borda superior */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+#exatas .subject {
+    border-top-color: #e2d40b; /* Vermelho para Exatas */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#exatas .subject:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#linguagens .subject {
+    border-top-color: #00ff00; /* Verde para Linguagens */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#linguagens .subject:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#humanas .subject {
+    border-top-color: #e91e1e; /* Azul para Humanas */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#humanas .subject:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+
+
+.content .subject:hover {
+    cursor: pointer;
+    background-color: #022e4b;
+}
+
+h2 {
+    color: white;
+}
+
+.subject img {
+    width: 70px; /* Define a largura fixa para todas as logos */
+    height: 50px; /* Define a altura fixa para todas as logos */
+    margin-right: 20px; /* Aumenta o espaço entre a imagem e o texto */
+}
+
+.subject p {
+    margin: 0;
+    font-size: 18px;
+    padding-left: 10px; /* Adiciona um pouco de espaço à esquerda do texto */
+}
+
+
+.contact-form {
+    padding: 50px;
+    background-color: #004aad;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 2px solid #ffffff; /* Adiciona uma borda fina branca */
+}
+
+
+.contact-form button:hover {
+    background-color: #003a8c;
+}
+.main{
+    padding: 50px;
+    background-color: #004aad;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ .text{
+     font-size: 45px;
+     color: #ffffff;
+     margin-bottom: 30px;
+ }
+ .paragrafo{
+     color: #ffffff;
+     margin-bottom: 50px;
+ }
+ .btn{
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+ }
+ .btn:hover{
+    background-color: #003a8c;
+ }
+ .sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.central-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #004aad;
+}
+
+.text-container {
+    width: 100%;
+    text-align: left;
+    color: #004aad;
+}
+.text-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:#004aad;
+}
+.text-container h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #ffffff;
+}
+.countdown-text {
+    color: white;
+    margin-right: 10px;
+}
+
+.countdown {
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #004aad;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    border-top: 3px solid;
+    border-top-color: orange;
+}
+
+.countdown:hover{
+    background-color: #022e4b ;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="img/facilitalogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="sobrenos.html"><img src="img/facilitalogo.png" alt="Logo" class="logo"></a>
+            </div>
+            <div id="menu" class="menu">
+                <a href="index.html" id="inicio">Inicio</a>
+                <a href="sobrenos.html" id="sobre">Sobre Nós</a>
+                <a href="cursos.html" id="cursos">Cursos</a>
+                <a href="suporte.html" id="suporte">Suporte</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <main class="content">
+        <div class="countdown-container">
+            <h2 class="countdown-text">Está pronto para o Enem? Faltam:</h2>
+            <div id="countdown" class="countdown"></div>
+        </div>
+        <h2 class="countdown-text">Motivos estudar pelo Facilita:</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Motivo 1</strong>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Conteúdo Objetivo</h5>
+                    <p class="card-text">Todos nossos conteúdos são produzidos por alunos, então a facilidade de outros estudantes aprender é muito melhor.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <strong>Motivo 2</strong>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Materiais Próprio</h5>
+                    <p class="card-text">Contamos com ótimos materiais e didatica em aula que apenas o 2°C tem!</p>
+                    <a href="cursos.html"><button class="btn btn-primary">Acesse os materiais por aqui</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <strong>Motivo 3</strong>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Possuimos suporte de alta qualidade</h5>
+                    <p class="card-text">O nosso suporte será via e-mail, qualquer dúvida ou sugestão por favor entre em contato</p>
+                    <a href="suporte.html"><button class="btn btn-primary">Acesse o suporte por aqui</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
